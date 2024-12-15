@@ -1,0 +1,23 @@
+```html
+<div class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-lg shadow-lg">
+  <!-- Content here -->
+</div>
+```
+
+Ensure your `tailwind.config.js` includes the necessary color palette (in this case, purple):
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["\./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        'purple': {
+          500: '#8b5cf6', //Example purple color
+        }
+      }
+    },
+  },
+  plugins: [],
+}
+```
